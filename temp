@@ -1,0 +1,318 @@
+Configuring Your Own Zendesk.
+Zendesk is definitely one of the most straightforward and easier environments to set up. Its sleek design and intuitive processes are most probably one of the reasons why so many companies started using Zendesk. It screams simplicity and simplicity is fast.
+
+Mastering Zendesk, however, can be challenging, and acquiring the necessary knowledge ends up being a time-consuming process. Relying on loose bits of information throughout the Internet to comply with the ever-growing and more complex requirements for your support environment can lead to a lot of backpedaling and frustration.
+
+Since you are reading this book, I can safely assume that you have been working with Zendesk for a while or at the very least, that you have already decided to work with Zendesk in the future. Either way, most likely, you are already familiar with its core functionality based on tickets and are looking forward to making the most out of your support environment.
+
+Also very likely, your current Zendesk environment has already been customized. Therefore, this chapter will quickly go over a basic Zendesk setup, which will serve as the base for all the upcoming changes throughout this book. This chapter will help you evaluate your individual requirements, planning the desired workflows as well as creating a road map for the final implementations by example.
+
+At the end of this chapter, you will have refreshed your memory of a basic setup. You will have gained an understanding of Zendesk's customization capabilities and how to plan the final implementation.
+
+This chapter will cover the following topics:
+
+- A quick overview – The Zendesk environment.
+- The basic Zendesk setup and its components.
+- Evaluating individual requirements by example.
+- Creating a road map for your customization.
+The Zendesk environment.
+Before we go through the basic Zendesk setup, let's take a quick look at our Zendesk environment.
+Zendesk is a customer service platform based on tickets. Customers can create tickets in order to receive help from a support agent. The support agent will then be able to review the ticket, engage in a message-based conversation with the customer, and finally set the ticket to be solved.
+While this is very much an oversimplified breakdown of what Zendesk does, it serves the purpose of introduction for those who have never heard about Zendesk.
+Let's take a quick look at the actual Zendesk environment and focus on its individual elements:
+- Top bar.
+- Sidebar.
+
+The Top bar can be divided into two parts. The left side, the first part, consists of ticket tabs. Zendesk allows you to work on multiple tickets simultaneously. Each ticket, similar to the pages in a web browser, is displayed as single tab. The right side, the second part, consists of a few buttons, which allow us to search our Zendesk for navigating to our Help Center or to sign out of our Zendesk environment.
+The Sidebar consists of buttons that give us the option to navigate through Zendesk. It allows us to display our ticket views, open our individual dashboard, review the latest reports, as well as navigate to all the Zendesk settings.
+Both the Top bar and the Sidebar can also display buttons to open other Zendesk apps that we can choose to add to our setup.
+
+The Main area displays whatever environment we choose to open, such as our individual dashboard, Zendesk settings, or as in our case here – our ticket views. This is where most agents will open one of the views in order to pick the next ticket.
+As we can see, on the surface Zendesk seems very straightforward to use. This is one of the reasons, no question about it, why agents find working with Zendesk on a daily basis so easy. However, like most systems, under the hood, there is a lot more going on than meets the eye at the first glance. This becomes more apparent when looking at a basic Zendesk setup.
+
+The basic Zendesk setup.
+Once you have created a new account, Zendesk will present you a button labeled Get Started. If clicked, it will guide you through the following steps:
+1. Set up email.
+1. Invite your team.
+1. Set up Help Center.
+1. What's next?
+This is meant to give you a quick overview of Zendesk's core functionality and point you into the right direction for further customization. While the first few steps are of little significance to us, step 4 provides us with a great overview over the basic elements of Zendesk. We will use this overview to quickly cover the basics and to freshen up our memory about the basic Zendesk setup.
+
+Channels.
+Channels allow customers to contact us using different methods of communication. Before adding any extra channels, the standard setup will allow users to create tickets via e-mail only. Out of the box, this e-mail will be support@yourcompany.zendesk.com .
+
+Self-service.
+Zendesk also allows us to set up self-service for our customers. The Help Center, for instance, can be a great tool in order to reduce customer queries by providing an open knowledge base for our customers.
+All the Self-Service options have to be set up manually before they can be used:.
+
+**
+Apps and integrations.
+Apps are a great way to add functionality to your Zendesk environment. You may choose one of the many apps available or decide to program your own and create more individual solutions.
+While Zendesk is a powerful tool, for most companies, it is likely one among a few tools within their ecosystem. Having the option to integrate Zendesk within that ecosystem can be very helpful. Some of the more common tools Zendesk allows to be integrated are:
+- JIRA.
+- Salesforce.
+- MailChimp.
+
+Ticketing workflows and efficiency.
+With the ticket system being at the core of Zendesk, it comes as no surprise that a great range of options are provided when it comes to tickets and the different workflows associated with them. The following elements can be used to create efficient workflows:
+- Triggers and automations.
+- Views.
+- Macros.
+- Service Level Agreements.
+- Groups.
+- Organizations.
+
+Triggers and automations.
+Triggers and automations are part of the Zendesk business rules. While triggers take action when a ticket has been updated or created, automations take action after a specified amount of time. Out of the box, there are seven active triggers and one active automation. Serving as examples, they also cover the most basic business rules for a unctioning setup:
+
+Views.
+Views are a pool of tickets, filtered by a list of set criteria. They are a crucial part when it comes to managing your ticket workflow. For example, if you offer different levels of support, views can be used to divide your tickets in Tier 1 and Tier 2 support.
+
+Macros.
+A macro is a templated response for agents, that can be used to answer customers. Mainly used to ensure the same level of support by providing macros for your agents, macros are more than just text modules. Creating macros, you can choose specific ticket properties that you would like to change upon use. Good examples are, adding a predefined tag, changing the status of a ticket, and setting custom fields whenever an agent uses a macro.
+
+Service Level Agreements.
+A Service Level Agreement (SLA) can be seen as a contract between you as a service provider and your customers, outlining the level of service that can be expected in a certain time frame. This feature is also helpful when using reports to review your team's performance.
+
+Groups.
+Groups can come very handy when defining and implementing workflows. For instance, a trigger could check a ticket for the keyword “lawyer”. If the keyword is found, the ticket is pushed to the group “supervisors”. Now, only agents in that group can access that specific ticket.
+
+Organizations.
+Each user (including end users) can be assigned to an organization. This can be useful in a handful of different scenarios such as restricting certain content in your help center to only one organization. Like a lot of Zendesk's options, you may come up with your own purpose of use.
+Zendesk categorizes all the preceding elements under the Ticketing Workflows and Efficiency heading:
+
+Performance reporting.
+While Zendesk provides options for performance reports, most Zendesk admins make use of the GoodData integration. GoodData is a powerful reporting and analytics tool working with Zendesk right out of the box. If the provided reporting options are sufficient for you, Zendesk allows you to get detailed snapshots in different areas of support, as shown in the following screenshot:
+
+Localization and branding.
+Being able to offer support in more than just one language is important for most international companies. Hence, it comes as no surprise that Zendesk also offers the necessary options to do so. Most importantly, Zendesk allows you to create dynamic content, which can be referenced by a placeholder within your macros or business rules. A placeholder would look something like this:
+`{{dc.example_placeholder}}`
+Using dynamic content means that Zendesk will automatically display the right language text depending on the user's language settings. Zendesk classes this feature as part of their localization options:
+
+It is important to note that Zendesk does not guide you through every possible setting. While they do cover the basics, there are many options hidden within the Settings tab. I highly recommend that you browse all your settings in order to get a better understanding of the actual scope of settings and customization.
+
+Evaluating individual requirements.
+Evaluating your individual requirements is a crucial part of customizing your Zendesk environment. As with most systems, there are various ways to achieve a desired outcome, each with its own benefits and drawbacks. It is important to understand that the scalability of your setup highly depends on the early planning phase, allowing for a carefully structured implementation. Therefore, a great understanding of your overall requirements is paramount.
+**
+
+Our example company.
+Before we can go through the process of such an evaluation, we need to establish a far- reaching scenario by creating a fictitious example company. For the sake of simplicity and not having to refer to the company as an example throughout this book, we will call it ExampleComp.
+ExampleComp is German tech company selling their own software online. They also offer s me hardware created by a third-party in collaboration with ExampleComp in order to guarantee better compatibility and support.
+
+Next to offering their software for individual purchase, customers can choose a yearly subscription allowing them access to the full range of software solutions. These customers are called VIPs and can purchase the hardware to a discounted price. As part of the subscription, VIP customers are supposed to receive faster responses from the support team.
+ExampleComp is still considered a start-up and cannot afford to provide customer-service in more than two languages (English and German), but are planning to offer support in more languages later on.
+
+Desired setup.
+Note that we are not focusing on creating the best support structure possible. Our focus lies on creating a believable support structure, while making sure that we can cover the important topics later on when it comes to the actual implementation. This is also meant to be a guide for the initial planning phase. Also note that we do not plan every aspect of our Zendesk setup beforehand. Some logistics will be added later on. Just like in a real-life scenario, the requirements can change as the business grows and changes.
+Keeping that in mind, let's move to the planning phase. Before planning and outlining anything specifically related to Zendesk, we should spend some time on the overall desired setup, only keeping in mind that we are using a ticket-based system. 
+
+Tip for the planning phase: As in our case, it can be helpful to plan the desired setup without keeping Zendesk's capabilities in mind. Not having any system-related restrictions to worry about can produce better ideas. While this can lead to having to adjust plans slightly later on, Zendesk offers great support for developers and lots of ideas can easily be facilitated. With too many restrictions in mind, some of the best ideas would never see the light of day.
+
+A hypothetical customer trying to contact the support, can be a great starting point. We can work our way through the customer's experience from there. This will allow us to draw all the possible branches leading toward the desired outcome. We can then use the created tree to plan our Zendesk workflows.
+
+The initial contact/channels
+While customers should have different options when trying to contact support, in many cases companies decide to limit the options dramatically in order to reduce the number of support tickets. In our case, ExampleComp wants to give their potential customers the freedom to contact support anytime during their customer journey and decides to open the following channels:.
+- Email.
+- Twitter.
+- Facebook.
+- Widget.
+- Help Center / Support Form.
+Having decided on the desired channels, we can now decide where to place those channels on our customer's journey and add some more describing details.
+
+Email.
+ExampleComp distributes their software through many different online outlets, most of which do ask for a support e-mail address. Besides providing it to third-party 
+stores, ExampleComp also plans on listing the e-mail address on their own website as well as referring to it in their printed manuals.
+
+Twitter.
+ExampleComp is planning to create a dedicated Twitter account that will mainly deal with support-related issues. They want to refer to that account within the description of their company's Twitter account. This dedicated Twitter account can then also be used by the operations department in order to broadcast operational updates.
+
+Facebook.
+When it comes to Facebook, it has been decided, that any direct message to ExampleComp's Facebook page will be handled as a customer support request.
+
+Widget.
+A widget should also be present on their website, allowing visitors to send support requests in a few clicks.
+
+Help Center / Support Form.
+ExampleComp aims to allow users to find most of the solutions within their Help Center, hoping to prevent as many tickets as possible. The Help Center will also allow users to fill out a support form in order to create a ticket.
+**
+
+The ticket's journey.
+Now that we have established the channels ExampleComp would like to use, we can start shifting our attention toward each ticket's individual journey. First of all, we need to remember that not all channels should be treated equally. Meaning that different channels will require different SLA rules. It is a common practice, for instance, that support requests created via Facebook are being escalated quicker than tickets created via the e-mail channel. The reason for that seems to lay with the customer's expectation of service depending on the channel used.
+Keeping that in mind, we can quickly sort our channels list by their supposed priority into the following groups:
+1. Facebook, Twitter.
+2. Email, Widget, Support Form.
+
+Knowing that group 1 and group 2 have to be handled differently when it comes to escalation rules, we can take note that both groups have to be marked differently when the ticket is being created. Let's name each group. In this case, since we only have two different groups, we do not have to be too descriptive when naming them:.
+1. EscalationTypeA.
+2. EscalationTypeB.
+
+Next, we need to remember our VIP customers, whom ExampleComp promised special treatment when it comes to support requests. We could simply adjust our business rules to escalate those tickets even quicker than our normal tickets, by creating a third group. In this case however, we will simply funnel them into a separate view. That way we can assign special agents to only serve our VIP customers. We also allow those agents to get accustomed to our most valued customers.
+But how do we tell normal customers apart from VIP customers?
+At this stage, we will not worry about the actual implementation, but note that VIP users need to be marked as such. We should make a habit out of collecting these kind of questions as we will revisit them later throughout the process. So our current ticket flow would look a little like that in the following figure:
+
+First, each ticket is assigned an escalation type depending on the channel. After the tickets have been marked accordingly, the system should then commence marking those tickets that were created by a VIP customer. While this seems to be a very rough concept only scratching at the surface of our final setup, this is the level of detail we want to focus on right now.
+
+Ticket views.
+Next, we can move on to our ticket views, which we will need in order to divide and pool certain tickets together. In this case, it was decided to not separate the views by languages. While ExampleComp offers support in two languages, it currently only hires bilingual agents. That is why we only split our support into three main categories:.
+
+- Tier 1 Support.
+- Tier 2 Support.
+- VIP Support.
+
+We should keep in mind that ExampleComp will offer support in more languages later on. It should be made fairly easy to divide tickets depending on the requester's language settings in the future. Our updated ticket flow would look a little like the following figure: 
+
+While VIP tickets will land directly in the corresponding VIP Support view, all non-VIP tickets will initially land in the Tier 1 view. Agents can then decide to push them into the Tier 2 view if the customer needs more technical help. Sorting all our tickets by priority within their corresponding views, we can leave the actual sorting process to our business rules.
+
+Agent workflow.
+Having created a rough sketch of our initial ticket flow from the moment where a ticket is
+created up to the point where it can be picked up by agents, we can now move on to a
+rough outline of the agents' workflow. That also entails planning what happens to the ticket
+once one of the agents replied to it.
+Let's start by creating a quick numbered list of what a typical workflow for a Tier 1 agent
+would look like:
+1. Opening the assigned view.
+2. Picking the first ticket with the highest priority.
+3. Answering the ticket or pushing it to Tier 2 support.
+4. Moving on to the next ticket.
+
+Looks easy enough. But what happens if a customer replies? There are many ways to
+handle customer replies. Let's review the two most common ways to do so:
+- The ticket can simply be reopened and made available in its initial view, allowing
+any agent to pick it up in order to commence support.
+- The ticket can still be assigned to the same agent, who will then commence
+helping that customer if possible. The agent can receive an e-mail notifying them
+about the customer's reply. But what if our agent stopped working already? Well,
+a business rule can remove the assignee (assigned agent) after a specific amount
+of time since the last ticket update. Doing that would force the ticket back into its
+initial view where another agent can then take care of the customer.
+**
+
+For the sake of adding a bit more complexity, we will go for the second option. Let's take a look at our updated ticket flow, shown in the following figure:
+
+Having added a little more complexity, we should break down the process into a few steps:
+1. A customer creates a ticket via one of our open channels.
+2. Depending on the channel, tickets are assigned to one of the two escalation types.
+3. If our customer is a VIP, we mark the ticket accordingly.
+4. The ticket is now either in the Tier 1 or our VIP view.
+5. An agent opens the ticket and decides whether to answer or push the ticket to the Tier 2 view for more complex support requests.
+6. The customer receives a reply.
+7. If the customer replies, the ticket shows up in the agent's own view. The agent receives an e-mail notification.
+8. If the agent does not update the ticket with a given time frame, the ticket is moved back to its initial view.
+9. Another agent can now pick up the ticket.
+
+Obviously, we are still looking at a very rough outline of our support's workflow. We are only describing what should happen to our tickets on the surface. However, creating such a simplified version has a lot of advantages. The ticket flow can be understood without a deeper knowledge of Zendesk. Other departments can weigh in at this point and the process can be reworked as many times as necessary until we know what the overall desired outcome should look like.
+For instance, we remember that ExampleComp offers their own hardware devices. Those products are being manufactured by a third-party company. That third-party company has to use ExampleComp's software on a regular basis. This practice regularly results in support requests by that third-party company. What if, in a meeting, it is decided that those requests should not be handled the same way as other customers' requests? As we are still in the process of planning our overall workflows, we can now easily add that suggestion to our overall concept and communicate the revised plans to the management. In this case, we can simply add another step where we check if the ticket was sent by our third-party company. If so, the ticket would be marked accordingly and show up in a dedicated view.
+Everyone involved understands the new plan right away and we can move on to finalizing the concept.
+
+At this point, I would like to suggest that you create a new version of the flowchart by adding the new option discussed earlier.
+
+Zendesk setup.
+It is time to take our rough sketch apart and to start thinking in Zendesk terms. How does Zendesk allow us to achieve our desired setup? Looking at our flowchart, we can now take each element and review our options within Zendesk. We can therefore start to create a more detailed list of our requirements. Meaning, we can start creating a list of features that need to be set up in order to turn our plan into reality.
+We should already keep in mind that everything we do now will help us create a quick road map later on. That is why we need to be specific enough so that a list of tasks can be generated without having to do any extra research.
+It is also important to note that it might not always be as simple as working through the created flowchart from A to B. More likely, you will end up jumping around a little. This is due to the fact that each element has to fit together at the end. Planning the integration of one element might effect the way we need to set up another. Also, keep in mind that throughout this book, we are going to cover a lot of Zendesk topics in detail. A lot of these topics are mentioned before we cover them in all of their complexity. There is no need to understand everything until we get to the point of implementation later on.
+
+Asking questions.
+Before we can create our final list of tasks as well as our road map, we should review our work so far. While some implementation tasks might become quite obvious, such as setting up the right views, looking at our plan we might wonder how we can achieve certain objectives. For now, we will only focus on those parts. Obviously, this is just an example. When planning your own Zendesk setup, you might already know all the answers, but the questions might be different altogether.
+In order to come up with the right questions, let's start by going through our flowchart
+while keeping the overall process in mind:
+The initial questions that come to mind are:
+How can we actually know if a ticket requester is a VIP? How can we know anything about our customers when they contact us?
+Clearly, it is not possible to get customer information in every scenario. In many cases, requesters might not even be customers yet. Therefore, we should focus on those cases where we can get the information and choose the right solution for us. In our case, there are two different types of information that come to mind:
+**
+- Information that will help us classify the ticket. In our case, is the user a VIP?
+- Information that will help us solve the ticket, such as what software did the user buy?
+
+While we do need to know if a user is in fact a VIP while the ticket is being created, it would be totally fine to receive information such as “products bought by the customer” when first opening the ticket. We already know, at this point, it will not be possible to get this information via a ticket created through Facebook, Twitter, or the standard Zendesk widget.
+
+We could, however, allow the VIP information to be transferred to our Zendesk environment when a customer is using our support form. As we have the option to program on our own or change the existing support form, we can easily achieve this. Another way of achieving this would be using the Single Sign-On (SSO) technology for our end-users, which would allow us to set user tags. There are many ways that would lead us to the same outcome, some of which we will cover later in this book.
+
+If we want to know more about our customers while answering their requests, it would be helpful to create our own little Zendesk app to help us out. Most companies have a unique identifier for each customer. In our case, we could use the customer's e-mail address. We could either display a generated link, that would open the companies backend, displaying the necessary information or we could go one step further and query those information from our servers and then display them within our ticket view itself. We will cover both options later in this book.
+
+As a result of our two preceding questions, we can record the following:
+Information that will help us classify the ticket. In our case, is the user a VIP?
+- We can send the VIP information via Support Form
+- We can use SSO and set the VIP status via a user tag
+- We could set the user tag via API when the subscription is bought
+
+Information that will help us solve the ticket, such as what software did the user buy?
+- We could program an app that would generate a link to our backend
+- We could program an app that would query all the information and display them directly in our app or ticket view
+Our next questions would be:
+How can we classify tickets as either EscalationTypeA or EscalationTypeB? How could we escalate these tickets differently depending on those two types?
+In order to do that, we could simply create two Zendesk triggers and a custom ticket field. The first trigger would check whether the ticket was created via a social media channel. If so, it would set the custom ticket field to EscalationTypeA . The second trigger would check whether the ticket was created via any of the other listed channels. In that case, it would set the custom ticket field to EscalationTypeB . Both triggers could also assign the initial priority.
+
+In order for the tickets to be escalated depending on the type, we can make use of automations. By setting up a few automations for both cases, we can easily check the type of the ticket and escalate the ticket after a certain amount of time. Here is an example automation:.
+
+Name: Escalation Rule – EscalationTypeA – Ticket age > 1 hour -> Escalation Level: High.
+
+Knowing how we would like to integrate our business rules for the purpose of ticket escalation, we can now decide on the exact rules and create a list of triggers and automations we will need to create.
+Before we do that, however, let's take a look at our complete flowchart again in order to come up with the next questions:.
+
+Looking at our flowchart, the next question that comes to mind is:
+How can we allow agents to push tickets to the Tier 2 view?
+Right off the bat, I can come up with three different ways to achieve that. All of which will need a ticket field that either says tier1 or tier2. In any case, we will need to create a trigger that sets the ticket field to tier1 as soon as a ticket has been created.
+
+Now we can allow the agent to do three different things:.
+- The agent can set the drop-down to tier and submit the ticket as open.
+- The agent can use a macro called Push to Tier 2, which we would need to create. The macro would then automatically set the right parameters.
+- The agent can simply click on a button named Push to Tier 2. For that we would need to create a little ticket sidebar app.
+While I prefer the third option because of speed, we might want to start with option 2 and integrate option 3 later on.
+**
+Listing tasks.
+Having found all the answers to our questions, either by online research or having used this book as a guide, we can move on and create a quick list of tasks. We can do this using our flowchart, the answers to our questions, and the overview of a basic Zendesk setup. So let's start listing our main tasks without any details and without worrying about a specific order.
+
+We need to set up the following:
+- Channels.
+- Custom fields.
+- Views.
+- Business rules.
+- Agent roles.
+- SLAs.
+- Macros.
+- Global Zendesk settings / Security settings.
+- Reporting.
+- Zendesk apps.
+
+Looking at each element on our list, we should already be able to envision all the subtasks and how everything snaps together as a whole. If not, it is probably best to review the flowchart and go through all the steps of the initial planning phase again as well as to review all the elements of a basic Zendesk setup.
+
+Creating the road map.
+Finally, we can move on to creating our road map, which will somewhat mirror the structure of the coming chapters of this book. However, we will not only cover the specific implementation in each chapter, but also dissect each topic further and build a more complete understanding of the subject matter. That is why each chapter will cover more than the items listed in our road map. It will therefore allow you to use this book as a work of reference.
+Our road map will consist of a list of tasks and subtasks sorted by the order of implementation. Our main goal should be covering all the necessary elements while making sure that we do not have to jump back and forth. All the jumping should have been done in the initial planning phase. We do, for example, set up custom fields before setting up business rules. This is due to the fact that business rules will require the existence of these fields. Let's take a quick look at the actual Zendesk environment and focus on its individual elements:
+
+I highly suggest that you review all your elements in order to identify any dependencies. You will need to take them into account during the setup.
+
+Let us have a look at our list of tasks:.
+- Setting up agent roles and groups:.
+    - Admin role.
+    - Support agent role.
+    - Tier 1 group.
+    - Tier 2 group.
+    - VIP group.
+- Creating custom fields:.
+    - Escalation Type.
+    - VIP.
+- Setting up channels:.
+    - Email.
+    - Facebook.
+    - Twitter.
+    - Widget.
+    - Support Form.
+- Setting up business rules / SLA:.
+    -Triggers
+    -Automations
+    -SLAs
+- Creating custom apps:.
+    - Tier 2 App.
+    - Customer Information App.
+    - Reporting via GoodData.
+- Security Settings and SSO:
+    - General Security Settings.
+    - SSO.
+
+You might have noticed that I left out the exact Business rules and SLAs. At this point, I encourage you to try listing all the necessary subtasks yourself.
+If you have not yet set up your Zendesk at all, you may want to apply the whole process to your own situation and come up with your very own road map.
+
+Summary.
+In this chapter, we went through the very basics of a Zendesk setup and its different elements. By following a simple example, you learned how to evaluate individual requirements and how to create a road map for the final implementation.
+
+In the next chapter, you will learn everything there is to know about agent roles, groups, organizations, and user tags. We will also cover different methods to import existing user databases. After covering these topics, we will revisit our example company and apply some of the knowledge you have learned.
